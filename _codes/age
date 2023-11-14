@@ -1,5 +1,10 @@
-int solution(int age) 
+using System;
+
+public class Solution 
 {
-    int answer = 2023-age;
-    return answer;
+    public int solution(int age) 
+    {
+        int answer = 2023-age;
+        return answer;
+    }
 }
