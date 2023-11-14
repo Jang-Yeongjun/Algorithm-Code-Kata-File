@@ -1,12 +1,17 @@
-int solution(int num1, int num2) 
+using System;
+
+public class Solution 
 {
-    int answer = 1;
-    if(num1 == num2)
-   {
-       return answer;
-   }
-    else
+    public int solution(int num1, int num2) 
     {
-        return -answer;
+        int answer = 1;
+         if(num1 == num2)
+        {
+            return answer;
+        }
+        else
+        {
+            return -answer;
+        }
     }
 }
