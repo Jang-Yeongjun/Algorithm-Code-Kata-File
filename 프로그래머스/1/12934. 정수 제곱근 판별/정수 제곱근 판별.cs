@@ -1,0 +1,20 @@
+using System;
+public class Solution 
+{
+    public long solution(long n) 
+    {
+        long answer = 0;
+        long x = (long)Math.Sqrt(n);  // n의 제곱근으로 x를 초기화합니다.
+
+        if (n >= 0 && n == x * x)
+        {
+            answer = (x + 1)*(x + 1);
+        }
+        else
+        {
+            answer = -1;
+        }
+
+        return answer;
+    }
+}
