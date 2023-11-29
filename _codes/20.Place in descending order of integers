@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+
+public class Solution 
+{
+    public long solution(long n) 
+    {
+        int length = (int)Math.Log10(n) + 1;
+
+        int[] array = new int[length];
+        for (int i = 0; i < length; i++) 
+        {
+            array[i] = (int)(n % 10);
+            n /= 10;
+        }
+
+        Array.Sort(array, (a, b) => b.CompareTo(a));
+
+        long result = 0;
+        for (int i = 0; i < length; i++) 
+        {
+            result = result * 10 + array[i];
+        }
+
+        return result;
+    }
+}
