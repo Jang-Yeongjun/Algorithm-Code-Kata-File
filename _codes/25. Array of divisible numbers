@@ -1,0 +1,17 @@
+using System;
+using System.Linq;
+
+public class Solution 
+{
+    public int[] solution(int[] arr, int divisor) 
+    {
+        var result = arr.Where(num => num % divisor == 0).ToArray();
+        
+        if (result.Length == 0) {
+            return new int[]{-1};
+        }
+        
+        Array.Sort(result);
+        return result;
+    }
+}
