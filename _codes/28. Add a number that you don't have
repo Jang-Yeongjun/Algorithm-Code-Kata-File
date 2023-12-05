@@ -1,0 +1,14 @@
+using System;
+using System.Linq;
+
+public class Solution 
+{
+    public int solution(int[] numbers) 
+    {
+        int[] allNumbers = Enumerable.Range(0, 10).ToArray();
+
+        int missingSum = allNumbers.Except(numbers).Sum();
+
+        return missingSum;
+    }
+}
