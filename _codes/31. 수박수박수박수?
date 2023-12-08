@@ -1,0 +1,21 @@
+public class Solution 
+{
+    public string solution(int n) 
+    {
+        char[] array = new char[n];
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                array[i] = '수';
+            }
+            else
+            {
+                array[i] = '박';
+            }
+        }
+
+        string answer = new string(array);
+        return answer;
+    }
+}
