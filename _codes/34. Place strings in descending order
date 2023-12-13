@@ -1,0 +1,14 @@
+using System;
+using System.Linq;
+
+public class Solution 
+{
+    public string solution(string s) 
+    {
+        var sortedChars = from c in s
+                          orderby c descending
+                          select c;
+        string answer = new string(sortedChars.ToArray());
+        return answer;
+    }
+}
