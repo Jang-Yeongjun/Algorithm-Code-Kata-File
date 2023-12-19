@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+
+public class Solution 
+{
+    public int solution(int n) 
+    {
+        List<int> reversedTernaryDigits = ConvertToReversedTernary(n);
+
+        int answer = 0;
+
+        foreach (int digit in reversedTernaryDigits)
+        {
+            answer = answer * 3 + digit;
+        }
+
+        return answer;
+    }
+    
+    private List<int> ConvertToReversedTernary(int number)
+    {
+        List<int> result = new List<int>();
+        
+        while (number > 0)
+        {
+            int remainder = number % 3;
+            result.Add(remainder);
+            number /= 3;
+        }
+        
+        return result;
+    }
+}
