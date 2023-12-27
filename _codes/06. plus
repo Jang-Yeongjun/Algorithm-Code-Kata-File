@@ -1,3 +1,17 @@
+문제 설명
+정수 num1과 num2가 주어질 때, num1과 num2의 합을 return하도록 soltuion 함수를 완성해주세요.
+
+제한사항
+-50,000 ≤ num1 ≤ 50,000
+-50,000 ≤ num2 ≤ 50,000
+
+Problem Description
+When the integers num1 and num2 are given, complete the solvation function so that the sum of num1 and num2 is returned.
+
+Restrictions
+-50,000 ≤ num1 ≤ 50,000
+-50,000 ≤ num2 ≤ 50,000
+
 using System;
 
 public class Solution 
