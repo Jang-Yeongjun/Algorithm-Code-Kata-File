@@ -1,0 +1,18 @@
+public class Solution 
+{
+    public int solution(int[,] sizes) 
+    {
+        int maxWidth = 0;
+        int maxHeight = 0;
+
+        for (int i = 0; i < sizes.GetLength(0); i++) 
+        {
+            maxWidth = Math.Max(maxWidth, Math.Max(sizes[i, 0], sizes[i, 1]));
+            maxHeight = Math.Max(maxHeight, Math.Min(sizes[i, 0], sizes[i, 1]));
+        }
+
+        int answer = maxWidth * maxHeight;
+        
+        return answer;
+    }
+}
