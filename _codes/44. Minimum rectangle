@@ -2,12 +2,11 @@
 명함 지갑을 만드는 회사에서 지갑의 크기를 정하려고 합니다. 다양한 모양과 크기의 명함들을 모두 수납할 수 있으면서, 작아서 들고 다니기 편한 지갑을 만들어야 합니다. 이러한 요건을 만족하는 지갑을 만들기 위해 디자인팀은 모든 명함의 가로 길이와 세로 길이를 조사했습니다.
 
 아래 표는 4가지 명함의 가로 길이와 세로 길이를 나타냅니다.
-|명함 번호|가로 길이|세로 길이|
-|------|---|---|
-|1|60|50|
-|2|30|70|
-|3|60|30|
-|4|80|40|
+		
+명함 번호: 1	가로 길이: 60 세로 길이: 50
+명함 번호: 2	가로 길이: 30 세로 길이: 70
+명함 번호: 3	가로 길이: 60 세로 길이: 30
+명함 번호: 4	가로 길이: 80 세로 길이: 40
 
 가장 긴 가로 길이와 세로 길이가 각각 80, 70이기 때문에 80(가로) x 70(세로) 크기의 지갑을 만들면 모든 명함들을 수납할 수 있습니다. 하지만 2번 명함을 가로로 눕혀 수납한다면 80(가로) x 50(세로) 크기의 지갑으로 모든 명함들을 수납할 수 있습니다. 이때의 지갑 크기는 4000(=80 x 50)입니다.
 
@@ -24,12 +23,10 @@ Problem Description
 A company that makes business card wallets tries to determine the size of their wallets. You have to make a small, easy-to-carry wallet that can store business cards of various shapes and sizes. To create a wallet that meets these requirements, the design team examined the horizontal and vertical lengths of all business cards.
 
 The table below shows the horizontal and vertical lengths of the four business cards.
-|Business name number|horizontal length|vertical length|
-|------|---|---|
-|1|60|50|
-|2|30|70|
-|3|60|30|
-|4|80|40|
+Business card number: 1 Horizontal Length: 60 Vertical Length: 50
+Business card number: 2 Horizontal Length: 30 Vertical Length: 70
+Business card number: 3 Horizontal Length: 60 Vertical Length: 30
+Business card number: 4 Horizontal Length: 80 Vertical Length: 40
 
 Since the longest side-by-side length is 80 and 70, you can store all your business cards by making a wallet measuring 80 (width) x 70 (length). However, if you lay your business card horizontally to store all your business cards, you can store them with a wallet measuring 80 (width) x 50 (length). The wallet at that time was 4000 (=80 x 50).
 
