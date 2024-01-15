@@ -1,0 +1,37 @@
+using System;
+using System.Text;
+
+public class Solution 
+{
+    public string solution(int[] food) 
+    {
+        StringBuilder answer = new StringBuilder();
+        int n = food.Length;
+        int[] half = new int[n];
+
+        for (int i = 1; i < n; i++) 
+        {
+            half[i] = food[i] / 2;
+        }
+
+        for (int i = 1; i < n; i++) 
+        {
+            for (int j = 0; j < half[i]; j++) 
+            {
+                answer.Append(i.ToString());
+            }
+        }
+        
+        answer.Append("0");
+
+        for (int i = n - 1; i >= 1; i--) 
+        {
+            for (int j = 0; j < half[i]; j++) 
+            {
+                answer.Append(i.ToString());
+            }
+        }
+
+        return answer.ToString();
+    }
+}
