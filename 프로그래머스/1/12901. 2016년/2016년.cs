@@ -1,0 +1,16 @@
+public class Solution 
+{
+    public string solution(int a, int b) 
+    {
+        int[] daysOfMonth = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        string[] daysOfWeek = { "FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU" };
+
+        int totalDays = b - 1; // 1월 1일을 0일로 계산
+        for (int i = 0; i < a - 1; i++)
+        {
+            totalDays += daysOfMonth[i];
+        }
+
+        return daysOfWeek[totalDays % 7];
+    }
+}
