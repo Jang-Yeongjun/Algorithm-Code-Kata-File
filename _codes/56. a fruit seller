@@ -1,0 +1,19 @@
+using System;
+using System.Linq;
+
+public class Solution 
+{
+    public int solution(int k, int m, int[] score) 
+    {
+        var sortedScore = score.OrderByDescending(s => s).ToArray();
+        
+        int totalProfit = 0;
+        for (int i = 0; i <= sortedScore.Length - m; i += m)
+        {
+            int minScore = sortedScore.Skip(i).Take(m).Min();
+            totalProfit += minScore * m;
+        }
+
+        return totalProfit;
+    }
+}
